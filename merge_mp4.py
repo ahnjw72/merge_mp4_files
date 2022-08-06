@@ -2,11 +2,11 @@
 #
 # ref site: https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg
 #
+# This script assume merging intro.mp4, some mp4 in a specific folder, and out.mp4 into an mkv file.
+#
 #####################################################################################################
 
 import subprocess, glob, os
-
-stdout_file = open('ffmpeg_output.txt', 'w')
 
 filenames = sorted(os.listdir('.'))
 print(filenames)
